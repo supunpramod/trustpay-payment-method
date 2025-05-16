@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PaymentMethodSelection from './payment-method-selection/components/PaymentMethodSelection';
 import PaymentMethodDetails from './payment-method-selection/components/PaymentMethodDetails';
 import { paymentMethodSelectionApi } from './payment-method-selection/api/paymentMethodSelection.api';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [step, setStep] = useState(1);
@@ -23,6 +24,7 @@ function App() {
       {step === 2 && <PaymentMethodDetails onSubmit={handleSubmit} />}
       {step === 3 && <div className="p-4 text-center text-green-600">Payment details saved!</div>}
     </div>
+    
   );
 }
 
