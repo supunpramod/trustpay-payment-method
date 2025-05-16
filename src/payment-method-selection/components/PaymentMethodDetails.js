@@ -24,7 +24,7 @@ export default function PaymentMethodDetails({ onSubmit }) {
   if (!selected) return null;
 
   return (
-    <div className="p-4">
+    <div className="p-4 font-poppins">
       <h3 className="font-semibold mb-2">{selected.name} Information</h3>
       {selected.id === 'card' && (
         <>

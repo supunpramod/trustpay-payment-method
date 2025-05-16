@@ -41,7 +41,7 @@ const TrustPayForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg shadow-md">
+    <div className="max-w-md mx-auto bg-white rounded-lg shadow-md font-poppins">
       {/* Header */}
       <div className="p-4 border-b">
         <h1 className="text-xl font-bold">TrustPay</h1>
@@ -70,8 +70,6 @@ const TrustPayForm = () => {
           <App />
         </div>
       )}
-
-      {/* Step content */}
 
       {activeTab === 'product-details' && (
         <div className="p-6 space-y-5">
@@ -135,7 +133,7 @@ const TrustPayForm = () => {
           </div>
         </div>
       )}
-{/* Step content */}
+
       {activeTab === 'your-details' && (
         <div className="p-6 space-y-4">
           <p className="text-sm">Enter your details:</p>
@@ -149,7 +147,7 @@ const TrustPayForm = () => {
           </div>
         </div>
       )}
-{/* Step content */}
+
       {activeTab === 'share-link' && (
         <div className="p-6 space-y-4 text-sm">
           <p>Complete your transaction and share the link:</p>
