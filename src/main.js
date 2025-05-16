@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/transaction-type" element={<TrustPayForm activeTab="transaction-type" />} />
+        <Route path="/" element={<TrustPayForm activeTab="transaction-type" />} />
         <Route path="/product-details" element={<TrustPayForm activeTab="product-details" />} />
         <Route path="/your-details" element={<TrustPayForm activeTab="your-details" />} />
         <Route path="/share-link" element={<TrustPayForm activeTab="share-link" />} />
